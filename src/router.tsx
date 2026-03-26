@@ -1,6 +1,6 @@
 import { createRouter as createTanStackRouter } from '@tanstack/react-router';
-import { routeTree } from './routeTree.gen';
 import { getContext } from './integrations/tanstack-query/root-provider';
+import { routeTree } from './routeTree.gen';
 
 export function getRouter() {
   const router = createTanStackRouter({
@@ -17,7 +17,7 @@ export function getRouter() {
 }
 
 declare module '@tanstack/react-router' {
-  interface Register {
+  type Register = {
     router: ReturnType<typeof getRouter>;
   }
 }
