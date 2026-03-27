@@ -10,6 +10,7 @@
     "dev": "vite dev --port 3000",
     "lint:fix": "eslint --fix",
     "lint": "eslint",
+    "postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",
     "prettier:fix": "prettier --write ./src",
     "prettier": "prettier --check ./src",
     "preview": "vite preview",
