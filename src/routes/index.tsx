@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { Title } from '#/components/title';
+import { Title } from '#/components/atitle';
 
 export const Route = createFileRoute('/')({ component: App });
 
