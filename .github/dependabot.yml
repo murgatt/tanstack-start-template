@@ -1,0 +1,41 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    versioning-strategy: increase
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-patch']
+    groups:
+      eslint:
+        patterns:
+          - 'eslint'
+          - '@eslint/js'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+      tailwindcss:
+        patterns:
+          - '@tailwindcss/vite'
+          - 'tailwindcss'
+    commit-message:
+      prefix: 'chore'
+      prefix-development: 'chore'
+      include: 'scope'
+    open-pull-requests-limit: 20
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    commit-message:
+      prefix: 'ci'
+      prefix-development: 'ci'
+      include: 'scope'
