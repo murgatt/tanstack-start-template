@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 // import { render } from '@/test-utils/render-with-providers';
-import { Title } from '../Title';
+import { Title } from '../title';
 
 describe('HomePage', () => {
   it('should display a title', () => {
