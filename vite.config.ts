@@ -1,5 +1,5 @@
 /// <reference types="vitest/config" />
-
+import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
 import { devtools } from '@tanstack/devtools-vite';
@@ -9,6 +9,7 @@ import { defineConfig } from 'vite';
 
 const config = defineConfig({
   plugins: [
+    paraglideVitePlugin({ project: './project.inlang', outdir: './src/paraglide' }),
     devtools(),
     tailwindcss(),
     tanstackStart(),

@@ -1,6 +1,7 @@
 import { TanStackDevtools } from '@tanstack/react-devtools';
 import { createRootRouteWithContext, HeadContent, Scripts } from '@tanstack/react-router';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
+import { getLocale } from '@/paraglide/runtime';
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools';
 import TanStackQueryProvider from '../integrations/tanstack-query/root-provider';
 import appCss from '../styles.css?url';
@@ -8,7 +9,7 @@ import type { QueryClient } from '@tanstack/react-query';
 
 type MyRouterContext = {
   queryClient: QueryClient;
-}
+};
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
   head: () => ({
@@ -40,7 +41,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={getLocale()} suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>

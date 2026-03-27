@@ -77,5 +77,5 @@ export default defineConfig(
     },
   },
   prettier,
-  { ignores: ['node_modules/**', '.next/**', 'next-env.d.ts'] },
+  { ignores: ['node_modules/**', 'dist/**', 'src/paraglide/**'] },
 );
