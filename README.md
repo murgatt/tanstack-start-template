@@ -5,6 +5,7 @@ This is a simple [TanStack Start](https://tanstack.com/start/latest) starter tem
 **Stack:**
 
 - [TanStack Start](https://tanstack.com/start/latest)
+- [TanStack Query](https://tanstack.com/query/latest)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Paraglide JS](https://github.com/opral/paraglide-js)
