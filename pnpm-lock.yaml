@@ -112,8 +112,8 @@ importers:
         specifier: 3.8.1
         version: 3.8.1
       prettier-plugin-tailwindcss:
-        specifier: 0.7.2
-        version: 0.7.2(prettier@3.8.1)
+        specifier: 0.8.0
+        version: 0.8.0(prettier@3.8.1)
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -1149,6 +1149,10 @@ packages:
 
   '@typescript-eslint/types@8.59.1':
     resolution: {integrity: sha512-ZDCjgccSdYPw5Bxh+my4Z0lJU96ZDN7jbBzvmEn0FZx3RtU1C7VWl6NbDx94bwY3V5YsgwRzJPOgeY2Q/nLG8A==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/types@8.59.2':
+    resolution: {integrity: sha512-e82GVOE8Ps3E++Egvb6Y3Dw0S10u8NkQ9KXmtRhCWJJ8kDhOJTvtMAWnFL16kB1583goCWXsr0NieKCZMs2/0Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/typescript-estree@8.59.1':
@@ -2489,8 +2493,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-tailwindcss@0.7.2:
-    resolution: {integrity: sha512-LkphyK3Fw+q2HdMOoiEHWf93fNtYJwfamoKPl7UwtjFQdei/iIBoX11G6j706FzN3ymX9mPVi97qIY8328vdnA==}
+  prettier-plugin-tailwindcss@0.8.0:
+    resolution: {integrity: sha512-V8ITGH87yuBDF6JpEZTOVlUz/saAwqb8f3HRgUj8Lh+tGCcrmorhsLpYqzygwFwK0PE2Ib6Mv3M7T/uE2tZV1g==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -2661,8 +2665,8 @@ packages:
     peerDependencies:
       seroval: ^1.0
 
-  seroval-plugins@1.5.2:
-    resolution: {integrity: sha512-qpY0Cl+fKYFn4GOf3cMiq6l72CpuVaawb6ILjubOQ+diJ54LfOWaSSPsaswN8DRPIPW4Yq+tE1k5aKd7ILyaFg==}
+  seroval-plugins@1.5.3:
+    resolution: {integrity: sha512-LhVh4KjjkKmCxOUjoaUwtqbDjyMfnA535yEmmGDuwZcIYtw8ns6tZmeszNTECeUg/3sJpnEjsz/KhQrcPXPw1Q==}
     engines: {node: '>=10'}
     peerDependencies:
       seroval: ^1.0
@@ -2671,8 +2675,8 @@ packages:
     resolution: {integrity: sha512-OwrZRZAfhHww0WEnKHDY8OM0U/Qs8OTfIDWhUD4BLpNJUfXK4cGmjiagGze086m+mhI+V2nD0gfbHEnJjb9STA==}
     engines: {node: '>=10'}
 
-  seroval@1.5.2:
-    resolution: {integrity: sha512-xcRN39BdsnO9Tf+VzsE7b3JyTJASItIV1FVFewJKCFcW4s4haIKS3e6vj8PGB9qBwC7tnuOywQMdv5N4qkzi7Q==}
+  seroval@1.5.3:
+    resolution: {integrity: sha512-BXe0x4buEeYiIKaRUnth1WqCILQ3k4O67KP/B4pC3pVz0Mv2c96ngA9QDREUYxWY1sb2RZVRqwI9RcpVMyHCVw==}
     engines: {node: '>=10'}
 
   set-function-length@1.2.2:
@@ -4183,6 +4187,9 @@ snapshots:
 
   '@typescript-eslint/types@8.59.1': {}
 
+  '@typescript-eslint/types@8.59.2':
+    optional: true
+
   '@typescript-eslint/typescript-estree@8.59.1(typescript@5.9.2)':
     dependencies:
       '@typescript-eslint/project-service': 8.59.1(typescript@5.9.2)
@@ -4896,7 +4903,7 @@ snapshots:
   eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint@9.39.1(jiti@2.6.1)):
     dependencies:
       '@package-json/types': 0.0.12
-      '@typescript-eslint/types': 8.59.1
+      '@typescript-eslint/types': 8.59.2
       comment-parser: 1.4.6
       debug: 4.4.3
       eslint: 9.39.1(jiti@2.6.1)
@@ -5665,7 +5672,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.7.2(prettier@3.8.1):
+  prettier-plugin-tailwindcss@0.8.0(prettier@3.8.1):
     dependencies:
       prettier: 3.8.1
 
@@ -5812,13 +5819,13 @@ snapshots:
     dependencies:
       seroval: 1.5.1
 
-  seroval-plugins@1.5.2(seroval@1.5.2):
+  seroval-plugins@1.5.3(seroval@1.5.3):
     dependencies:
-      seroval: 1.5.2
+      seroval: 1.5.3
 
   seroval@1.5.1: {}
 
-  seroval@1.5.2: {}
+  seroval@1.5.3: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -5883,8 +5890,8 @@ snapshots:
   solid-js@1.9.12:
     dependencies:
       csstype: 3.2.3
-      seroval: 1.5.2
-      seroval-plugins: 1.5.2(seroval@1.5.2)
+      seroval: 1.5.3
+      seroval-plugins: 1.5.3(seroval@1.5.3)
 
   source-map-js@1.2.1: {}
 
