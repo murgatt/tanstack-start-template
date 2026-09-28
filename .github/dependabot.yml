@@ -26,6 +26,10 @@ updates:
         patterns:
           - '@tailwindcss/vite'
           - 'tailwindcss'
+      tanstack-query:
+        patterns:
+          - '@tanstack/react-query'
+          - '@tanstack/react-query-devtools'
     commit-message:
       prefix: 'chore'
       prefix-development: 'chore'
