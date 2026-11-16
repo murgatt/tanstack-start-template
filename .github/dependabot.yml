@@ -30,6 +30,13 @@ updates:
         patterns:
           - '@tanstack/react-query'
           - '@tanstack/react-query-devtools'
+      tanstack-router:
+        patterns:
+          - '@tanstack/react-router'
+          - '@tanstack/react-router-devtools'
+          - '@tanstack/react-router-ssr-query'
+          - '@tanstack/react-start'
+          - '@tanstack/router-plugin'
     commit-message:
       prefix: 'chore'
       prefix-development: 'chore'
